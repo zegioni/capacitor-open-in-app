@@ -1,0 +1,64 @@
+{
+  "name": "capacitor-open-in-app",
+  "version": "0.1.0",
+  "description": "Capacitor plugin for receiving shared files from other apps",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "ios",
+    "android"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "lint": "eslint src tests --ext .ts",
+    "test": "vitest",
+    "format": "prettier --check .",
+    "prepublishOnly": "npm run lint && npm test && npm run build"
+  },
+  "keywords": [
+    "capacitor",
+    "plugin",
+    "share",
+    "open-in",
+    "pdf",
+    "file",
+    "ios",
+    "android"
+  ],
+  "author": "Mykyta <on11shchenko@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zegioni/capacitor-open-in-app"
+  },
+  "capacitor": {
+    "ios": {
+      "src": "ios"
+    },
+    "android": {
+      "src": "android"
+    }
+  },
+  "peerDependencies": {
+    "@capacitor/core": "^7.0.0"
+  },
+  "devDependencies": {
+    "@capacitor/core": "^7.0.0",
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "@typescript-eslint/parser": "^7.0.0",
+    "eslint": "^8.57.0",
+    "prettier": "^3.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "5.5.4",
+    "vitest": "^1.6.0"
+  }
+}

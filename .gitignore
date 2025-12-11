@@ -1,0 +1,14 @@
+node_modules
+dist
+.DS_Store
+*.log
+npm-debug.log*
+
+# IDE
+.idea
+.vscode
+*.swp
+*.swo
+
+# Build artifacts
+*.tsbuildinfo
