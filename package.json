@@ -1,6 +1,6 @@
 {
   "name": "capacitor-open-in-app",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Capacitor plugin for receiving shared files from other apps",
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
@@ -15,7 +15,8 @@
   "files": [
     "dist",
     "ios",
-    "android"
+    "android",
+    "CapacitorOpenInApp.podspec"
   ],
   "scripts": {
     "build": "tsup",
